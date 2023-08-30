@@ -25,9 +25,14 @@ function showData(dataArray){
 
 //Solicitud fetch
 async function getJson () {
+	try {
 	const response = await fetch(url);
 	const data = await response.json();
 	showData(data);
+	}
+	catch {
+		alert("Categoría desconocida")
+	}
 }
 
 //Error:
