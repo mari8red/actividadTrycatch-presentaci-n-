@@ -31,7 +31,7 @@ async function getJson () {
 	showData(data);
 	}
 	catch {
-		alert("Categoría desconocida")
+		error(resultado.innerHTML = `<h3 class="bg-danger text-white">Categoría desconocida</h3>`)
 	}
 }
 
